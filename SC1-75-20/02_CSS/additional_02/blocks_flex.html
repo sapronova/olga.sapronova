@@ -3,36 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Блочная верстка</title>
+    <title>Блочная верстка(flex)</title>
     <style>
-    .backroungblock {
-        height: auto;
-        background-color: whitesmoke;
-    }
-    .leftblock {
-        width: 15em;
-        background-color:silver;
-        float: left;
-    }
-    .rightblock {
-        background-color: darkgray;
-        margin-bottom: .2em;
-        margin-left: 15em;
-        overflow: auto;
-    }
-    .bottomblock {
-        width: 100%;
-        background-color: silver;
-        height: auto;
-        clear: both;
-    }
-    img {
-        height: 150px;
-    }
-   </style>
+        .backgroundblock {
+            display:flex;
+            background-color: whitesmoke;
+            flex-direction: row;
+        }
+        .leftblock {
+            flex: none;
+  width: 15em;
+            background-color:silver;
+            align-self: flex-start;
+        }
+        .rightblock {
+            flex-direction: column;
+            width: 100%;
+        }
+        .article {
+            margin-bottom: .2em;
+            align-self: stretch;
+            background-color: darkgray;
+            overflow: auto;
+        }
+        .bottomblock {
+            background-color: silver; 
+        }
+        img {
+            width: 150px;
+        }
+
+    </style>
 </head>
 <body>
-    <div class="backroungblock">
+    <div class="backgroundblock">
     <div class="leftblock">
         <h3>Блок навигации</h3>
         <ul> 
@@ -45,22 +49,25 @@
         </ul>                   
     </div>
     <div class="rightblock">
-        <h3>Статья 1</h3>
+        <div class="article">
+            <h3>Статья 1</h3>
         Размер блока:<br>
         Занимает всю доступную ширину <br>
         Должен присутствовать цвет фона <br>
         Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom
-    </div>
-    <div class="rightblock">
-        <h3>Статья 2</h3>
-        Размер блока:<br>
+        </div>
+        <div class="article">
+            <h3>Статья 2</h3>
+          Размер блока:<br>
         Занимает всю доступную ширину <br>
         Должен присутствовать цвет фона <br>
         Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom<br>
         Картинка вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой картинки. <br>
-        <img src="email.png" align="right">
+        <img src="email.png" align="right">  
     </div>
+            </div>
+</div>    
         <div class="bottomblock">Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.</div>
-    </div>
+
 </body>
 </html>
