@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню и подменю</title>
+    <style>
+        #week {
+            float:left;
+            width:100%;
+            list-style:none;
+            margin-bottom:10px;
+            }
+        #week li {
+            background-color:rgb(221, 214, 214);
+            position: relative;
+            display:block;
+            float: left;
+            width: 100px;
+            border-style: solid;
+            border-collapse: collapse;
+            border-radius: 5px; border-width: 1px;
+            padding: 3px;
+            }
+        #week li a {
+            text-decoration: none;
+            color: rgb(161, 152, 152);
+            }
+        #week ul {
+            list-style:none;
+            position:absolute;
+            margin-left: -44px;
+            padding-top: 3px;
+            display:none;
+            opacity:0;
+       }
+        #week ul li {
+        padding-top:1px; 
+        float:none;
+        }
+        #week li:hover ul{
+            display: block;
+            opacity:1;
+            position:absolute;
+        }
+        @media all and (max-device-width: 771px) {
+            #week li {
+            background-color:rgb(221, 214, 214);
+            position: relative;
+            display:block;
+            float: none;
+            width: 100px;
+            border-style: solid;
+            border-collapse: collapse;
+            border-radius: 5px; border-width: 1px;
+            padding: 3px;
+            }
+            #week ul {
+            list-style:none;
+            position:absolute;
+            margin-left: 64px;
+            margin-top: -24px;
+            display:none;
+            opacity:0;
+        }
+         }
+   </style>
+</head>
+<body>
+    <ul id="week">
+             <li>
+                 <a href="#">Понедельник </a>
+                    <ul class="">
+                       <li><a href="#">Завтрак</a></li>
+                       <li><a href="#">Обед</a></li>
+                        <li><a href="#">Ужин</a></li>
+                    </ul>
+             </li>
+             <li>
+                <a href="#">Вторник </a>
+                   <ul class="submenu">
+                      <li><a href="#">Завтрак</a></li>
+                      <li><a href="#">Обед</a></li>
+                       <li><a href="#">Ужин</a></li>
+                   </ul>
+            </li>
+            <li>
+                <a href="#">Среда </a>
+                   <ul class="submenu">
+                      <li><a href="#">Завтрак</a></li>
+                      <li><a href="#">Обед</a></li>
+                       <li><a href="#">Ужин</a></li>
+                   </ul>
+            </li>
+            <li>
+                <a href="#">Четверг </a>
+                   <ul class="submenu">
+                      <li><a href="#">Завтрак</a></li>
+                      <li><a href="#">Обед</a></li>
+                       <li><a href="#">Ужин</a></li>
+                   </ul>
+            </li>
+            <li>
+                <a href="#">Пятница </a>
+                   <ul class="submenu">
+                      <li><a href="#">Завтрак</a></li>
+                      <li><a href="#">Обед</a></li>
+                       <li><a href="#">Ужин</a></li>
+                   </ul>
+            </li>
+            <li>
+                <a href="#">Суббота </a>
+                   <ul class="submenu">
+                      <li><a href="#">Завтрак</a></li>
+                      <li><a href="#">Обед</a></li>
+                       <li><a href="#">Ужин</a></li>
+                   </ul>
+            </li>
+            <li>
+                <a href="#">Воскресенье </a>
+                   <ul class="submenu">
+                      <li><a href="#">Завтрак</a></li>
+                      <li><a href="#">Обед</a></li>
+                       <li><a href="#">Ужин</a></li>
+                   </ul>
+            </li>
+     </ul>
+</body>
+</html>
