@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess desk</title>
+    <style>
+        table {
+            border: solid 2px;
+            border-collapse: collapse;
+            counter-reset: cellcount 65;
+            text-align: center;
+            font-size: 30pt;
+            font-weight: bold;
+            }
+        td::before {
+            counter-increment: cellcount -1;
+            content: counter(cellcount);
+        }
+        tr:nth-child(odd)>td:nth-child(even) {background-color: black; height: 60px; width: 60px;
+            border: solid 1px;
+            border-collapse: collapse;
+            color: white;
+            }
+        tr:nth-child(even)>td:nth-child(odd)  {background-color: black; height: 60px; width: 60px;
+            border: solid 1px;
+            border-collapse: collapse;
+            color: white;
+            }
+    </style>
+</head>
+<body>
+    <table>
+        <tr> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
